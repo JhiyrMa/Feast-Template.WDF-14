@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
-<body style="background: var(--body-bg-colour);">
+<body style="background: var(--body-bg-colour); position: relative;">
     <header class="navbar">
         <div class="navbar_spacing">
             <div class="navbar-wrapper">
@@ -18,21 +18,56 @@
                     <a href="./index.html">
                         <img src="https://cdn.prod.website-files.com/679ca96421c6cb8a7f9032a7/679cb9559b3347833476137a_feast.svg" alt="Logo">
                     </a>
-                    <div class="nav-items-container">
-                        <a href="./our-story.html" class="nav-items navbar-our_story">
-                            Our Story
+                    <div class="nav-items-container desktop-nav-items">
+                        <a href="./our-story.html" class="nav-items navbar-our_story animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    Our Story
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    Our Story
+                                </p>
+                            </div>
                         </a>
-                        <a href="./menu.html" class="nav-items navbar-menu">
-                            Menu
+                        <a href="./menu.html" class="nav-items navbar-menu animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    Menu
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    Menu
+                                </p>
+                            </div>
                         </a>
-                        <a href="./gallery.html" class="nav-items navbar-gallery">
-                            Gallery
+                        <a href="./gallery.html" class="nav-items navbar-gallery animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    Gallery
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    Gallery
+                                </p>
+                            </div>
                         </a>
-                        <a href="./blogs.html" class="nav-items navbar-blogs">
-                            Blogs
+                        <a href="./blogs.html" class="nav-items navbar-blogs animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    Blogs
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    Blogs
+                                </p>
+                            </div>
                         </a>
-                        <a href="./reservation.html" class="nav-items navbar-reservation">
-                            Reservation
+                        <a href="./reservation.html" class="nav-items navbar-reservation animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    Reservation
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    Reservation
+                                </p>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -47,6 +82,111 @@
         </div>
     </header>
 
+    <div class="feast-card">
+        <div class="card-return-x-wrapper">
+            <div class="card-return-x">
+                <div class="card-return-stick card-stick-1"></div>
+                <div class="card-return-stick card-stick-2"></div>
+            </div>
+        </div>
+
+        <div class="feast-card-info-wrapper">
+            <div class="feast-card-info">
+                <div class="feast-logo">
+                    <img src="https://cdn.prod.website-files.com/679ca96421c6cb8a7f9032a7/67a1b180cc9acbad4ec8af93_ic-feast.svg" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="info-1">
+                        4517 Washington Ave. Manchester, Kentucky 39495
+                    </p>
+                    <p class="info-2">+(480) 555-0103</p>
+                    <p class="info-3">
+                        <span>
+                            Mon to Sat
+                        </span>: 11:00 AM - 10:00 PM
+                    </p>
+                    <p class="info-4">
+                        <span>
+                            Sunday
+                        </span>: 12:00 PM - 11:00 PM
+                    </p>
+                </div>
+    
+            </div>
+            <div class="social-media-acc card-social-media-acc">
+                <a href="x.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><!-- Icon from Flowbite Icons by Themesberg - https://github.com/themesberg/flowbite-icons/blob/main/LICENSE --><path fill="currentColor" d="M13.8 10.5L20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11l-7.3 9h3l5.7-7l5.1 7H22zm-2.4 3l-1.4-2l-5.6-7.9h2.3l4.5 6.3l1.4 2l6 8.5h-2.3l-4.9-7Z"/></svg>
+                </a>
+                <a href="x.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><!-- Icon from BoxIcons by Atisa - https://creativecommons.org/licenses/by/4.0/ --><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z" fill="currentColor"/></svg>
+                </a>
+                <a href="x.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><!-- Icon from Iconoir by Luca Burgio - https://github.com/iconoir-icons/iconoir/blob/main/LICENSE --><path fill="currentColor" fill-rule="evenodd" d="M12 4.15c-1.191 0-2.58.028-3.934.066l-.055.002c-1.378.039-2.49.07-3.366.215c-.913.151-1.671.44-2.277 1.063c-.608.625-.873 1.398-.998 2.323c-.12.89-.12 2.018-.12 3.42v1.524c0 1.4 0 2.528.12 3.419c.124.925.39 1.698.998 2.323c.606.624 1.364.912 2.277 1.063c.876.145 1.988.176 3.366.215l.055.002c1.355.038 2.743.066 3.934.066s2.58-.028 3.934-.066l.055-.002c1.378-.039 2.49-.07 3.366-.215c.913-.151 1.671-.44 2.277-1.063c.608-.625.874-1.398.998-2.323c.12-.89.12-2.018.12-3.42v-1.524c0-1.401 0-2.529-.12-3.419c-.124-.925-.39-1.698-.998-2.323c-.606-.624-1.364-.912-2.277-1.063c-.876-.145-1.988-.176-3.367-.215l-.054-.002A145 145 0 0 0 12 4.15m-1.128 10.501A.75.75 0 0 1 9.75 14v-4a.75.75 0 0 1 1.122-.651l3.5 2a.75.75 0 0 1 0 1.302z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="x.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-wrapper">
+            <div class="nav-items-container mobile-nav-items">
+                <a href="./our-story.html" class="nav-items navbar-our_story animation-wrapper">
+                    <div class="animation-container">
+                        <p class="animation-1 nav-animation-1">
+                            Our Story
+                        </p>
+                        <p class="animation-2 nav-animation-2">
+                            Our Story
+                        </p>
+                    </div>
+                </a>
+                <a href="./menu.html" class="nav-items navbar-menu animation-wrapper">
+                    <div class="animation-container">
+                        <p class="animation-1 nav-animation-1">
+                            Menu
+                        </p>
+                        <p class="animation-2 nav-animation-2">
+                            Menu
+                        </p>
+                    </div>
+                </a>
+                <a href="./gallery.html" class="nav-items navbar-gallery animation-wrapper">
+                    <div class="animation-container">
+                        <p class="animation-1 nav-animation-1">
+                            Gallery
+                        </p>
+                        <p class="animation-2 nav-animation-2">
+                            Gallery
+                         </p>
+                    </div>
+                </a>
+                <a href="./blogs.html" class="nav-items navbar-blogs animation-wrapper">
+                    <div class="animation-container">
+                         <p class="animation-1 nav-animation-1">
+                            Blogs
+                        </p>
+                        <p class="animation-2 nav-animation-2">
+                            Blogs
+                        </p>
+                    </div>
+                </a>
+                <a href="./reservation.html" class="nav-items navbar-reservation animation-wrapper">
+                    <div class="animation-container">
+                        <p class="animation-1 nav-animation-1">
+                            Reservation
+                        </p>
+                        <p class="animation-2 nav-animation-2">
+                            Reservation
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <section class="hero">
         <div class="hero_spacing section-spacings">
             <div class="hero-wrapper">
@@ -60,10 +200,15 @@
                                 Relax in an atmosphere that feels like home while enjoying a menu designed to satisfy your every craving. Whether it's healthy options or indulgent favorites, we've got something for everyone.
                             </p>
                         </div>
-                        <a href="./reservation.html" class="hero-button buttons">
-                            <p class="button-text1">
-                                Reserve a Table
-                            </p>
+                        <a href="./reservation.html" class="hero-button buttons animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    Reserve a Table
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    Reserve a Table
+                                </p>
+                            </div>
                             <div class="button-icon arrow-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
                             </div>
@@ -122,10 +267,15 @@
                             Experience meals made from the freshest ingredients, designed to delight your taste buds. Whether you're craving healthy options or indulgent comfort food, we've got you covered. Enjoy each bite in a peaceful and inviting atmosphere.
                         </p>
                     </div>
-                    <a href="./reservation.html" class="sec_below-hero-button buttons">
-                        <p class="button-text1">
-                            Reserve a Table
-                        </p>
+                    <a href="./reservation.html" class="sec_below-hero-button buttons animation-wrapper">
+                        <div class="animation-container">
+                            <p class="animation-1 nav-animation-1">
+                                Reserve a Table
+                            </p>
+                            <p class="animation-2 nav-animation-2">
+                                Reserve a Table
+                            </p>
+                        </div>
                         <div class="button-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
                         </div>
@@ -407,10 +557,15 @@
                         </h4>
                         <p>Why wait for a table when you can secure your spot ahead of time? Book your reservation with just a few clicks and enjoy a seamless dining experience</p>
                     </div>
-                    <a href="./reservation.html" class="booking-box-button buttons">
-                        <p class="button-text1">
-                            Reserve a Table
-                        </p>
+                    <a href="./reservation.html" class="booking-box-button buttons animation-wrapper">
+                        <div class="animation-container">
+                            <p class="animation-1 nav-animation-1">
+                                Reserve a Table
+                            </p>
+                            <p class="animation-2 nav-animation-2">
+                                Reserve a Table
+                            </p>
+                        </div>
                         <div class="button-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
                         </div>
@@ -512,10 +667,15 @@
                     </a>
                 </div>
                 <div class="our-blogs-button-wrapper">
-                    <a href="./blogs.html" class="our-blogs-button buttons">
-                        <p class="button-text1">
-                            View All Blogs
-                        </p>
+                    <a href="./blogs.html" class="our-blogs-button buttons animation-wrapper">
+                        <div class="animation-container">
+                            <p class="animation-1 nav-animation-1">
+                                View All Blogs
+                            </p>
+                            <p class="animation-2 nav-animation-2">
+                                View All Blogs
+                            </p>
+                        </div>
                         <div class="button-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
                         </div>
@@ -594,10 +754,15 @@
                             </h4>
                             <p>We believe that every meal is story waiting to be told. From our humble beginnings to becoming a favorite spot for food lovers, we've always been committed to delivering the finest dining experience.</p>
                         </div>
-                         <a href="./reservation.html" class="occasion-button buttons">
-                        <p class="button-text1">
-                            View Our Menu
-                        </p>
+                         <a href="./reservation.html" class="occasion-button buttons animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    View Our Menu
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    View Our Menu
+                                </p>
+                            </div>
                         <div class="button-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
                         </div>
@@ -837,10 +1002,15 @@
                             </p>
                         </div>
 
-                        <a href="./blogs.html" class="our-blogs-button buttons">
-                        <p class="button-text1">
-                            Contact us
-                        </p>
+                        <a href="./blogs.html" class="our-blogs-button buttons animation-wrapper">
+                            <div class="animation-container">
+                                <p class="animation-1 nav-animation-1">
+                                    Contact us
+                                </p>
+                                <p class="animation-2 nav-animation-2">
+                                    Contact us
+                                </p>
+                            </div>
                         <div class="button-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
                         </div>

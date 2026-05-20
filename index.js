@@ -1,3 +1,28 @@
+const hamMenu = document.querySelector(".navbar-ham_menu");
+const desktopCard = document.querySelector(".feast-card");
+const desktopClose = document.querySelector(".card-return-x");
+const mobileNav = document.querySelector(".mobile-nav");
+
+hamMenu.addEventListener("click", (ham) => {
+    if (window.innerWidth <= 991) {
+        hamMenu.classList.toggle("active");
+        mobileNav.classList.toggle("active");
+    } else {
+        desktopCard.classList.toggle("active");
+    }
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 991) {
+            hamMenu.classList.remove("active");
+            mobileNav.classList.remove("active");
+        }
+    });
+});
+
+desktopClose.addEventListener("click", () => {
+    desktopCard.classList.remove("active");
+})
+
 const reviewers = document.querySelectorAll(".reviewer");
 const reviewText = document.getElementById("review");
 
@@ -31,10 +56,34 @@ const faqItems = document.querySelectorAll(".faq-q-and-a");
 faqItems.forEach((item) => {
     item.addEventListener("click", () => {
         faqItems.forEach((faq) => {
-            if(faq !== item){
+            if (faq !== item) {
                 faq.classList.remove("active");
             }
         })
         item.classList.toggle("active");
     })
 })
+
+document.querySelectorAll('.animation-wrapper').forEach(wrapper => {
+    // Initialize the starting state
+    wrapper.classList.add('state-1');
+
+    wrapper.addEventListener('mouseenter', () => {
+        // Turn on transitions and trigger the slide up
+        wrapper.classList.add('animating', 'is-hovered');
+    });
+
+    wrapper.addEventListener('mouseleave', () => {
+        // 1. Instantly turn off transitions so components don't animate back down
+        wrapper.classList.remove('animating', 'is-hovered');
+
+        // 2. Swap states so the text blocks swap their background positions invisibly
+        if (wrapper.classList.contains('state-1')) {
+            wrapper.classList.remove('state-1');
+            wrapper.classList.add('state-2');
+        } else {
+            wrapper.classList.remove('state-2');
+            wrapper.classList.add('state-1');
+        }
+    });
+});
