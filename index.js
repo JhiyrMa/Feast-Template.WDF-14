@@ -65,19 +65,14 @@ faqItems.forEach((item) => {
 })
 
 document.querySelectorAll('.animation-wrapper').forEach(wrapper => {
-    // Initialize the starting state
     wrapper.classList.add('state-1');
-
     wrapper.addEventListener('mouseenter', () => {
-        // Turn on transitions and trigger the slide up
         wrapper.classList.add('animating', 'is-hovered');
     });
 
     wrapper.addEventListener('mouseleave', () => {
-        // 1. Instantly turn off transitions so components don't animate back down
         wrapper.classList.remove('animating', 'is-hovered');
 
-        // 2. Swap states so the text blocks swap their background positions invisibly
         if (wrapper.classList.contains('state-1')) {
             wrapper.classList.remove('state-1');
             wrapper.classList.add('state-2');
