@@ -9,6 +9,8 @@
     --lg-p: 20px;
     --lg-mb: 150px;
     --md-mb: 100px;
+    --sm-mb: 80px;
+    --vsm-mb: 60px;
     --lg-max-w: 1336px;
 }
 
@@ -253,6 +255,8 @@
     max-height: 250px;
     opacity: 1;
     transition: opacity 700ms cubic-bezier(.22, 1, .36, 1);
+    z-index: 5;
+    
 }
 
 .mobile-nav.active a {
@@ -304,8 +308,7 @@
     width: 100%;
 }
 
-.animation-wrapper.animating .animation-1,
-.animation-wrapper.animating .animation-2 {
+.animation-wrapper.animating .animation-1, .animation-wrapper.animating .animation-2 {
     transition: transform 500ms cubic-bezier(.22, 1, .36, 1);
 }
 
@@ -403,6 +406,7 @@
     font-size: 14px;
     max-height: 45px;
     position: relative;
+    z-index: 0;
 }
 
 .button-icon, .arrow-icon {
@@ -547,7 +551,6 @@
     padding-block: 60px 8px;
     margin-bottom: var(--lg-mb);
     overflow: hidden;
-
 }
 
 .menu-1-wrapper {
@@ -733,7 +736,7 @@
 
 .feature p {
     font-size: 14px;
-    font-weight: 300px;
+    font-weight: 300;
     line-height: 1.5;
 }
 
@@ -1398,6 +1401,7 @@
 }
 
 .faq-img > img {
+    display: block;
     width: 100%;
     object-fit: cover;
 }
@@ -1983,6 +1987,10 @@
         max-height: 600px;
     }
 
+    .faq-title > h2 {
+        font-size: 34px;
+    }
+
     .faq-bot {
         flex-direction: column;
         row-gap: 30px;
@@ -2029,6 +2037,461 @@
 }
 
 @media (max-width: 767px) {
+    .section-spacings {
+        margin-bottom: var(--sm-mb);
+    }
 
+    .hero {
+        background-image: none;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-left {
+        max-width: none;
+        text-align: center;
+        padding-block: 30px 35px;
+        row-gap: 0;
+    }
+
+    .context-top {
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .hero-right {
+        max-width: none;
+    }
+
+    .sec_below-hero-wrapper {
+        column-gap: 30px;
+    }
+
+    .sec_below-left {
+        max-width: 40%;
+    }
+    .sec_below-right {
+        max-width: 60%;
+    }
+
+    .sec_below-right > div > h2 {
+        font-size: 20px;
+    }
+
+    .menu {
+        margin-bottom: var(--md-mb);
+        padding-block: 35px 8px;
+    }
+
+    .menu-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-1-wrapper {
+        margin-bottom: 0;
+    } 
+
+    .menu-overlay-img-container {
+        display: none;
+    }
+
+    .menu-title {
+        margin-bottom: 0;
+    }
+
+    .menu-title > h2 {
+        font-size: 30px;
+    }
+
+    .menu-lists-w-img {
+        flex-direction: column-reverse;
+        padding-block: 20px;
+        row-gap: 20px;
+    }
+
+    .menu-items {
+        max-width: none;
+    }
+
+    .menu-img {
+        max-width: none;
+    }
+
+    .menu-img > img {
+        width: 100%;
+    }
+
+    .menu-lists-bot {
+        padding-block: 20px !important;
+    }
+
+    .feature h4 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .booking-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .booking-left {
+        display: none;
+    }
+
+    .booking-right {
+        max-width: none;
+    }
+
+    .booking-right > img {
+        display: block;
+        min-height: auto;
+        max-height: none;
+    }
+
+    .booking-box {
+        max-width: none;
+        position: inherit;
+        inset: 0;
+        padding: 40px 30px;
+    }
+
+    .our-blogs-title > h2 {
+        font-size: 30px;
+    }
+
+    .card_img-container {
+        min-height: 255px;
+        max-height: 255px;
+    }
+
+    .card_img-container > img {
+        min-height: 255px;
+        max-height: 255px;
+    }
+
+    .testimonials-title > h2 {
+        font-size: 30px;
+    }
+
+    #review {
+        font-size: 20px;
+    }
+
+    .reviewer-wrapper {
+        max-width: none;
+        margin-inline: 0;
+        min-height: 170px;
+    }
+
+    .reviewer-wrapper img {
+        min-height: 170px;
+        max-height: 170px;
+    }
+
+    .occasion-wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .occasion-img {
+        max-width: none;
+    }
+
+    .occasion-img > img {
+        min-height: 360px;
+        max-height: 360px;
+    }
+
+    .occasion_mid-block {
+        max-width: none;
+        row-gap: 40px;
+    }
+
+    .reservation {
+        margin-bottom: var(--sm-mb);
+    }
+
+    .reservation_spacing {
+        margin-bottom: 40px !important;
+    }
+
+    .form-top-context > h4 {
+        font-size: 22px;
+    }
+
+    .faq-title > h2 {
+        font-size: 32px;
+    }
+
+    .faq-q > h4 {
+        font-size: 16px;
+    }
+
+    .faq-a p {
+        font-size: 14px;
+    }
+
+    .instagram-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-wrapper {
+        padding-block: 50px 20px;
+    }
+
+    .contact-us-text {
+        max-width: 80%;
+    }
+
+    .footer-nav {
+        align-items: start;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    .section-spacings {
+        margin-bottom: var(--vsm-mb);
+    }
+
+    .sec_below-hero-wrapper {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .sec_below-left {
+        max-width: none;
+    }
+
+    .sec_below-right {
+        max-width: none;
+    }
+
+    .menu {
+        margin-bottom: var(--vsm-mb);
+    }
+
+    .menu-1-wrapper {
+        margin-bottom: 0 !important;
+    }
+
+    .menu-title > h2 {
+        font-size: 26px;
+    }
+
+    .menu-items {
+        grid-row-gap: 25px;
+    }
+
+    .menu-item-name {
+        font-size: 14px !important;
+        font-weight: 500;
+    }
+
+    .menu-item > div p {
+        font-size: 12px;
+    }
+
+    .item-ingredients {
+        font-size: 12px;
+    }
+
+    .menu-2-wrapper {
+        margin-bottom: 10px !important;
+    }
+
+    .features-wrapper {
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        row-gap: 10px;
+    }
+
+    .feature > img {
+        min-width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        max-height: 50px;
+    }
+
+    .feature h4 {
+        margin-bottom: 2px;
+    }
+
+    .booking-box {
+        padding: 30px 20px;
+    }
+
+    .booking-box-top {
+        margin-block: 0 20px;
+    }
+
+    .booking-box-top > p {
+        font-size: 12px;
+    }
+
+    .booking-box-mid > h4 {
+        font-size: 20px;
+    }
+
+    .our-blogs-title > h2 {
+        font-size: 26px;
+    }
+
+    .our-blogs_cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card_img-container {
+        min-height: fit-content;
+        max-height: fit-content;
+    }
+
+    .card_img-container > img {
+        min-height: 340px;
+        max-height: 340px;
+    }
+
+    .testimonials-wrapper {
+        padding-block: 40px;
+    }
+
+    .testimonials-title > h2 {
+        font-size: 26px;
+    }
+
+    #review {
+        font-size: 16px;
+    }
+
+    .reviewer-wrapper {
+        column-gap: 5px;
+        min-height: 148px;
+    }
+
+    .reviewer-wrapper img {
+        min-height: 106px;
+        max-height: 106px;
+    }
+
+    .reviewer-name {
+        font-size: 12px;
+    }
+
+    .reviewer-address {
+        font-size: 10px;
+    }
+
+    .occasion_mid-block {
+                grid-row-gap: 20px;
+        padding: 20px;
+    }
+    
+    .occasion-top > h4 {
+        font-size: 22px;
+    }
+
+    .occasion-block-bot > h4  {
+        font-size: 24px;
+    }
+    .reservation {
+        margin-bottom: var(--vsm-mb);
+    }
+
+    .reservation_spacing {
+        margin-bottom: 20px !important;
+    }
+
+    .form-top-context > h4 {
+        font-size: 20px;
+    }
+
+    .form-top-context > p {
+        font-size: 14px;
+    }
+
+    .form-wrapper {
+        row-gap: 20px;
+    }
+
+    .form-second-row-wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .fill-email {
+        width: 100%;
+    }
+    .fill-ph-no {
+        width: 100%;
+    }
+
+    .form-third-row-wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .fill-date {
+        width: 100%;
+    }
+    .fill-time {
+        width: 100%;
+    }
+
+    .fill-special-requests {
+        height: 160px
+    }
+
+    .reservation-button {
+        margin-top: 20px
+    }
+
+    .faq-title > h2 {
+        font-size: 26px;
+    }
+
+    .faq-q {
+        grid-column-gap: 15px;
+    }
+
+    .instagram-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-us-text > h4 {
+        font-size: 18px;
+    }
+
+    .contact-us-text > p {
+        font-size: 14px;
+    }
+
+    .footer-wrapper {
+        row-gap: 40px;
+    }
+
+    .footer-nav-items-container {
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    .footer-info {
+        grid-column-gap: 80px;
+        grid-row-gap: 20px;
+        flex-flow: wrap;
+    }
+
+    .footer-bot {
+        font-size: 12px;
+    }
 }
 
