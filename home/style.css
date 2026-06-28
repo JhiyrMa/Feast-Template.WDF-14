@@ -258,8 +258,7 @@ span {
     max-height: 250px;
     opacity: 1;
     transition: opacity 700ms cubic-bezier(.22, 1, .36, 1);
-    z-index: 5;
-
+    z-index: 1000;
 }
 
 .mobile-nav.active a {
@@ -893,7 +892,7 @@ span {
 .our-blogs-lists {
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
+    row-gap: 14px;
     width: 100%;
     cursor: pointer;
     text-decoration: none;
@@ -947,7 +946,7 @@ span {
     align-items: center;
     column-gap: 6px;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.5;
     text-transform: uppercase;
 }
 
@@ -2259,7 +2258,7 @@ span {
     }
 
     .faq-title>h2 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .faq-q>h4 {
@@ -2291,7 +2290,6 @@ span {
 }
 
 @media (max-width: 479px) {
-
     .section-spacings {
         margin-bottom: var(--vsm-mb);
     }
@@ -2387,8 +2385,8 @@ span {
     }
 
     .card_img-container {
-        min-height: fit-content;
-        max-height: fit-content;
+        min-height: auto;
+        max-height: none;
     }
 
     .card_img-container>img {
@@ -2467,6 +2465,17 @@ span {
         row-gap: 20px;
     }
 
+    .fill-name {
+        width: 100%;
+        height: auto;
+    }
+
+    .fill-name>input {
+        padding-block: 10px;
+        padding-right: 10px;
+        background-position: 20px 8px;
+    }
+
     .form-second-row-wrapper {
         flex-direction: column;
         row-gap: 20px;
@@ -2474,10 +2483,24 @@ span {
 
     .fill-email {
         width: 100%;
+        height: auto;
+    }
+
+    .fill-email>input {
+        padding-block: 10px;
+        padding-right: 10px;
+        background-position: 20px 8px;
     }
 
     .fill-ph-no {
         width: 100%;
+        height: auto;
+    }
+
+    .fill-ph-no>input {
+        padding-block: 10px;
+        padding-right: 10px;
+        background-position: 20px 8px;
     }
 
     .form-third-row-wrapper {
@@ -2487,18 +2510,32 @@ span {
 
     .fill-date {
         width: 100%;
+        height: auto;
+    }
+
+    .fill-date>input {
+        padding-block: 10px;
+        padding-right: 10px;
+        background-position: 20px 8px;
     }
 
     .fill-time {
         width: 100%;
+        height: auto;
+    }
+
+    .fill-time>input {
+        padding-block: 10px;
+        padding-right: 10px;
+        background-position: 20px 8px;
     }
 
     .fill-special-requests {
-        height: 160px
+        height: 160px;
     }
 
     .reservation-button {
-        margin-top: 20px
+        margin-top: 20px;
     }
 
     .faq-title>h2 {
