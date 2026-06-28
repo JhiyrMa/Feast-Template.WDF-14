@@ -459,6 +459,8 @@ span {
     background-position: 20px 12px;
     background-repeat: no-repeat;
     background-size: auto;
+    font-size: 14px;
+    color: var(--sub-title-colour);
 }
 
 .fill-name>input::placeholder {
@@ -490,6 +492,8 @@ span {
     background-position: 20px 12px;
     background-repeat: no-repeat;
     background-size: auto;
+    font-size: 14px;
+    color: var(--sub-title-colour);
 }
 
 .fill-email>input::placeholder {
@@ -515,6 +519,8 @@ span {
     background-position: 20px 12px;
     background-repeat: no-repeat;
     background-size: auto;
+    font-size: 14px;
+    color: var(--sub-title-colour);
 }
 
 .fill-ph-no>input::placeholder {
@@ -546,6 +552,8 @@ span {
     background-position: 20px 12px;
     background-repeat: no-repeat;
     background-size: auto;
+    font-size: 14px;
+    color: var(--sub-title-colour);
 }
 
 .fill-date>input::placeholder {
@@ -571,6 +579,8 @@ span {
     background-position: 20px 12px;
     background-repeat: no-repeat;
     background-size: auto;
+    font-size: 14px;
+    color: var(--sub-title-colour);
 }
 
 .fill-time>input::placeholder {
@@ -597,6 +607,8 @@ span {
     background-repeat: no-repeat;
     background-size: auto;
     outline: none;
+    font-size: 14px;
+    color: var(--sub-title-colour);
 }
 
 .fill-special-requests>textarea::placeholder {
@@ -1199,7 +1211,7 @@ span {
     }
 
     .fill-name {
-        height: auto;
+        height: 43px;
     }
     
     .fill-name>input {
@@ -1213,7 +1225,7 @@ span {
     }
 
     .fill-email {
-        height: auto;
+        height: 43px;
     }
 
     .fill-email>input {
@@ -1223,7 +1235,7 @@ span {
     }
 
     .fill-ph-no {
-        height: auto;
+        height: 43px;
     }
 
     .fill-ph-no>input {
@@ -1237,7 +1249,7 @@ span {
     }
 
     .fill-date {
-        height: auto;
+        height: 43px;
     }
 
     .fill-date>input {
@@ -1247,7 +1259,7 @@ span {
     }
 
     .fill-time {
-        height: auto;
+        height: 43px;
     }
 
     .fill-time>input {

@@ -479,6 +479,7 @@ span {
     background-repeat: no-repeat;
     background-size: auto;
     font-size: 14px;
+    color: var(--sub-title-colour);
 }
 
 .fill-name>input::placeholder {
@@ -690,6 +691,9 @@ span {
 
 .stats-subtitle {
     border-color: white;
+    margin-bottom: 10px!important;
+    padding-left: 10px!important;
+    height: auto;
 }
 
 .stats-subtitle h4 {
@@ -1148,6 +1152,7 @@ span {
         max-width: 60px;
         max-height: 60px;
     }
+
     .faq-title>h2 {
         font-size: 34px;
     }
@@ -1202,5 +1207,239 @@ span {
 
     .contactus-title > h2 {
         font-size: 38px;
+    }
+
+    .reservation-right {
+        padding: 25px;
+    }
+
+    .fill-name {
+        height: 43px;
+    }
+
+    .form-second-row-wrapper {
+        column-gap: 20px;
+    }
+
+    .fill-email {
+        height: 43px;
+    }
+
+    .fill-ph-no {
+        height: 43px;
+    }
+
+    .reservation-button {
+        margin-top: 30px;
+    }
+
+    .contact-info-wrapper {
+        row-gap: 25px;
+    }
+
+    .info-top h4 {
+        font-size: 24px;
+    }
+
+    .info-bot {
+        row-gap: 16px;
+    }
+
+    .info {
+        padding-bottom: 16px;
+    }
+
+    .facts-left {
+        row-gap: 30px;
+        padding: 25px 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .stats-context p {
+        line-height: 1.5;
+    }
+
+    .right-block-wrapper {
+        grid-row-gap: 35px;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .text-container h4 {
+        font-size: 30px;
+    }
+
+    .faq-title>h2 {
+        font-size: 30px;
+    }
+
+    .faq-q>h4 {
+        font-size: 16px;
+    }
+
+    .faq-a p {
+        font-size: 14px;
+    }
+    .footer-wrapper {
+        padding-block: 50px 20px;
+    }
+
+    .contact-us-text {
+        max-width: 80%;
+    }
+
+    .footer-nav {
+        align-items: start;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    .section-spacings {
+        margin-bottom: var(--vsm-mb);
+    }
+
+    .title_spacing {
+        margin-bottom: 0;
+    }
+
+    .contactus-title {
+        padding-block: 36px;
+    }
+
+    .contactus-title > h2 {
+        font-size: 32px;
+    }
+
+    .reservation-right {
+        padding: 20px;
+    }
+
+    .form-wrapper {
+        row-gap: 20px;
+    }
+
+    .fill-name>input {
+        background-position: 16px 10px;
+        padding-left: 44px;
+        height: auto;
+    }
+
+    .form-second-row-wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .fill-email {
+        width: 100%;
+    }
+
+    .fill-ph-no {
+        width: 100%;
+    }
+
+    .fill-special-requests {
+        height: 160px;
+    }
+
+    .contact-info-wrapper {
+        row-gap: 20px;
+    }
+
+    
+    .info-top h4 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    
+    .info-top p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .info-left {
+        row-gap: 30px;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    
+    .info p {
+        font-size: 16px;
+    }
+    
+    .info a {
+        font-size: 14px;
+    }
+    
+    .stats-subtitle {
+        gap: 8px;
+    }
+    
+    .stats-subtitle h4 {
+        font-size: 12px;
+    }
+    
+    .arrow-icon {
+        height: 20px;
+    }
+    
+    .arrow-icon svg {
+        height: 20px;
+    }
+    
+    .stats-context h4 {
+        font-size: 20px;
+    }
+    
+    .facts-right {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    
+    .block-top img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    .text-container h4 {
+        font-size: 26px;
+    }
+
+    .faq-title>h2 {
+        font-size: 24px;
+    }
+
+    .faq-q {
+        grid-column-gap: 15px;
+    }
+
+    .contact-us-text>h4 {
+        font-size: 18px;
+    }
+
+    .contact-us-text>p {
+        font-size: 14px;
+    }
+
+    .footer-wrapper {
+        row-gap: 40px;
+    }
+    
+    .footer-nav-items-container {
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+    
+    .footer-info {
+        grid-column-gap: 80px;
+        grid-row-gap: 20px;
+        flex-flow: wrap;
+    }
+    
+    .footer-bot {
+        font-size: 12px;
     }
 }
