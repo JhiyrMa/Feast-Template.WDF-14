@@ -863,4 +863,27 @@ span {
     .desktop-nav-items {
         display: none;
     }
+
+    .footer-wrapper {
+        padding-block: 50px 20px;
+        row-gap: 40px;
+    }
+
+    .contact-us {
+        align-items: start;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .contact-us-text {
+        max-width: 60%;
+    }
+
+    .footer-nav {
+        margin-bottom: 40px;
+    }
+
+    .footer-info-item {
+        row-gap: 4px;
+    }
 }
